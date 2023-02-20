@@ -1,2 +1,2 @@
 # Retro
-A Restro style code showcase tool
+A Retro style code showcase tool
