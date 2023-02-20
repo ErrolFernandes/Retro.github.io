@@ -4,12 +4,19 @@ body{
     place-self: center;
 
 }
+.square{
+    display: grid;
+    width: 60%;
+    place-self: center;
+    background-color: #6693c1;
+}
 .form{
     display: grid;
     place-self: center;
-    width: 40%;
+    width: 50%;
     height:15em;
     margin-top: 150px;
+    margin-bottom: 100px;
     background-color: antiquewhite;
     border: 3px solid #353531;
     border-radius: 20px;
