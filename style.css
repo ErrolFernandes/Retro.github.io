@@ -4,11 +4,14 @@ body{
     place-self: center;
 
 }
+
 .form{
+    resize: both;
+    overflow: auto;
     display: grid;
     place-self: center;
     width: 40%;
-    height:15em;
+    height:30em;
     margin-top: 150px;
     background-color: antiquewhite;
     border: 3px solid #353531;
@@ -70,6 +73,7 @@ body{
     width:auto;
     box-sizing: border-box;
 } 
+
 .t{
     
     box-sizing: border-box;
@@ -103,3 +107,4 @@ button{
     font-size: 2em;
     border-radius: 3px;
 }
+
