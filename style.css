@@ -7,11 +7,13 @@ body{
 .form{
     display: grid;
     place-self: center;
+    width: 40%;
+    height:15em;
     margin-top: 150px;
     background-color: antiquewhite;
     border: 3px solid #353531;
     border-radius: 20px;
-    box-shadow: 0.4rem 0.4rem #353531;
+    box-shadow: 0.4rem 1rem #353531;
 }
 .up{
     margin: none;
@@ -19,10 +21,11 @@ body{
 }
 .left-cir{
     margin-left:18px;
-    margin-top: 8px;
+    
     
 }
 .cir1{
+    margin-top: 5px;
     height: 15px;
     width: 15px;
     background-color: #c16666;
@@ -47,26 +50,56 @@ body{
     display: inline-block;
 }
 .header{
+    position: relative;
     float: right;
     border:none;
-    width: 80px;
+    width: 130px;
     height: 20px;
+    text-decoration: none;
+    margin-top: 3px;
+    
+}
+.header>input{
+    width: 60%;
+    border: none;
+    padding: none;
+    background-color: antiquewhite;
 }
 
+.ta{
+    width:auto;
+    box-sizing: border-box;
+} 
 .t{
+    
+    box-sizing: border-box;
     background-color: antiquewhite;
     border: none;
-     border-radius: 0 0 20px 20px;
-     width: 18em;
-    height: 15em;
+    padding: 0%;
+    font-size: 2em;
+    border-radius: 0 0 20px 20px;
+    
+    height: 80%;
+    width: 100%;
+    
+    resize: none;
+    
 }
+.t:focus-visible{
+    outline: none;
+}
+
 .download{
+    height: 3em;
+    width: 5em;
+   
     margin-top: 5em;
     display: grid;
     place-self: center;
 }
 button{
     background-color: #c16666;
-    border: 2px solid #353531;
+    border: 0.1em solid #353531;
+    font-size: 2em;
     border-radius: 3px;
 }

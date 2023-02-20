@@ -6,23 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"
     <title>Document</title>
 </head>
 <body>
-    <div class="form">
+    <div class="form" id="form">
     <form>
         <div class="up">
         <span class="left-cir">
             <span class="cir1"> </span>
             <span class="cir2"> </span>
             <span class="cir3"> </span></span>
-            <input type="text" class="header"></div>
-                    <textarea placeholder="paste your code here.." class="t"></textarea>
-
+            <span class="header"><i class="fa fa-twitter" aria-hidden="true"></i>
+               <input type="text" placeholder="twitterID"></span></div>
+        
+            <textarea placeholder="paste your code here.." class="t"></textarea>
+            
     </form>
     </div>
     <div class="download">
-        <button>Download</button>
+        <button onclick="down()">Download</button>
     </div>
+<script>
+    function down(){
+        domtoimage.toJpeg(document.getElementById('form'), { quality: 1 })
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = 'my-image-name.jpeg';
+        link.href = dataUrl;
+        link.click();
+    });
+}
+</script>
 </body>
 </html>
