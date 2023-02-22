@@ -14,7 +14,7 @@ body{
     display: grid;
     place-self: center;
     width: 50%;
-    height:15em;
+    height:25rem;
     margin-top: 150px;
     margin-bottom: 100px;
     background-color: antiquewhite;
@@ -99,7 +99,6 @@ body{
 .download{
     height: 3em;
     width: 5em;
-   
     margin-top: 5em;
     display: grid;
     place-self: center;
@@ -109,4 +108,12 @@ button{
     border: 0.1em solid #353531;
     font-size: 2em;
     border-radius: 3px;
+}
+
+button:hover {background-color: antiquewhite}
+
+button:active {
+  background-color: antiquewhite;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
