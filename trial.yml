@@ -1,0 +1,3 @@
+              - name: Log to LogSnag
+                uses: jsmrcaga/action-logsnag@v0.0.2
+            
